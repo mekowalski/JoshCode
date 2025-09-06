@@ -23,19 +23,41 @@ Nesting is KEY!
 # once state is entered, i'm asking user about difficluty level but how do i keep stateOption?
 # i don't want it to print an actiivity with a difficulty level for NM when CO was entered
 
+# not sure if i should ask user to start with state or activity type?
+# how do i implement for loop? use id for difficluty level? use it for state options? use it for activity type?
+# for state in stateoption
+    # if state == NM
+        # have difficulty level entered
+        # then print the difficulty level activity at the location of chosen state
+
+# OR
+# for level in difficultylevel
+    # if level == 1
+        # have state entered
+        # then print difficulty level activity at location of chosen state
+
+# OR
+# for activity in activitytype
+    # if activity == 1
+        # 
+
 
 hiking = 1
 biking = 2
 waterDay = 3
 
 enter = input("Enter 1-Start or 2-Stop: ")
-while enter != "2":
+while enter == "1":
     activityType = int(input("Enter Activity Number: 1-Hiking, 2-Biking, 3-Water Day :"))
     if activityType == 1:
-        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ")
+        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ") #right here, how do i keep stateoption and let that take user to level 1/2 with activity withen chosen state
         print("Great you chose", stateOption, "\n")
         level = input("Difficulty Level:  1-Easy, 2-Hard :")
         
+        # maybe two conditions should be met: if state == NM and level == 2
+            # then print("you can do a hard hike in NM at atalaya mountain trail in santa fe!")
+            # there would be 8 options for hiking alone, 4 states X 2 levels
+            
         # if 1easy then show easy hiking place
         if level == "1":
             print("Okay! You can do an easy hike in", stateOption, "at Falls Creek Meadows in Durango CO. \n")
