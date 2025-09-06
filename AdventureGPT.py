@@ -28,23 +28,25 @@ hiking = 1
 biking = 2
 waterDay = 3
 
-enter = input("Enter 1 :Start or 2 :Stop ")
+enter = input("Enter 1-Start or 2-Stop: ")
 while enter != "2":
-    activityType = input("Enter 1 :Hiking, 2: Biking, 3 :Water Day :")
-    if activityType == "1":
-        stateOption = input("Enter State for activity: CO, NM, UT, AZ: ")
+    activityType = int(input("Enter Activity Number: 1-Hiking, 2-Biking, 3-Water Day :"))
+    if activityType == 1:
+        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ")
         print("Great you chose", stateOption, "\n")
-        level = input("Enter 1 :Easy, 2 :Hard :")
+        level = input("Difficulty Level:  1-Easy, 2-Hard :")
         
         # if 1easy then show easy hiking place
         if level == "1":
-            print("Okay!  You can do an easy hike in", stateOption, "at Falls Creek Meadows in Durango CO. \n")
+            print("Okay! You can do an easy hike in", stateOption, "at Falls Creek Meadows in Durango CO. \n")
         # else 2 hard then show hard hiking place
         else:
             print("Okay! You can do a hard hike in", stateOption, "up Engineer Mountain in the San Juan Mountains. \n")
-    # elif 2:
+    elif activityType == 2:
+        print("you chose biking!")
         # stateOption
-    # else 3:
+    else:
+        print("you chose a water day!")
         # stateOption
         # print("you chose state: ", stateOption)
     break
