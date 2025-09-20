@@ -42,9 +42,9 @@ Nesting is KEY!
         # 
 
 
-hiking = 1
-biking = 2
-waterDay = 3
+# hiking = 1
+# biking = 2
+# waterDay = 3
 
 enter = input("Enter 1-Start or 2-Stop: ")
 while enter == "1":
@@ -57,28 +57,25 @@ while enter == "1":
         # maybe two conditions should be met: if state == NM and level == 2
             # then print("you can do a hard hike in NM at atalaya mountain trail in santa fe!")
             # there would be 8 options for hiking alone, 4 states X 2 levels
-            
-        # if 1easy then show easy hiking place
-        if stateOption == "AZ" and level == 1:
+        if stateOption == "AZ" and level == "1":
             print("You can do an easy hike in", stateOption, "at West Fork Trail in Sedona \n")
-        elif stateOption == "AZ" and level == 2:
+        elif stateOption == "AZ" and level == "2":
             print("You can do a hard hike in", stateOption, "at Camelback Hike in Phoenix. \n")
-        elif stateOption == "CO" and level == 1:
+        elif stateOption == "CO" and level == "1":
             print("You can do an easy hike in", stateOption, "at Falls Creek Meadows in Durango. \n")
-        elif stateOption == "CO" and level == 2:
+        elif stateOption == "CO" and level == "2":
             print("You can do a hard hike in", stateOption, "at Black Bear Pass Trail in Telluride. \n")
-        elif stateOption == "NM" and level == 1:
+        elif stateOption == "NM" and level == "1":
             print("You can do an easy hike in", stateOption, "at Pueblo Loop Trail at Bandelier National Monument. \n")
-        elif stateOption == "NM" and level == 2:
+        elif stateOption == "NM" and level == "2":
             print("You can do a hard hike in", stateOption, "at Wheeler Peak in near Toas. \n")
-        elif stateOption == "UT" and level == 1:
+        elif stateOption == "UT" and level == "1":
             print("You can do an easy hike in", stateOption, "at Zion Canyon Overlook near Hurricane . \n")
         else:
             print("You can do a hard hike in", stateOption, "at Hidden Valley Trail near Moab. \n")
-            # print("Okay! You can do an easy hike in", stateOption, "at Falls Creek Meadows in Durango CO. \n")
-        # else 2 hard then show hard hiking place
         # else:
-            # print("Okay! You can do a hard hike in", stateOption, "up Engineer Mountain in the San Juan Mountains. \n")
+        #     print("okay -_-")
+        
     elif activityType == 2:
         print("you chose biking!")
         # stateOption
