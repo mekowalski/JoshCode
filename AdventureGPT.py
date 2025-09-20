@@ -41,16 +41,11 @@ Nesting is KEY!
     # if activity == 1
         # 
 
-
-# hiking = 1
-# biking = 2
-# waterDay = 3
-
 enter = input("Enter 1-Start or 2-Stop: ")
 while enter == "1":
     activityType = int(input("Enter Activity Number: 1-Hiking, 2-Biking, 3-Water Day :"))
     if activityType == 1:
-        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ").upper() #right here, how do i keep stateoption and let that take user to level 1/2 with activity withen chosen state
+        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ").upper()
         print("Great you chose", stateOption, "\n")
         level = input("Difficulty Level:  1-Easy, 2-Hard :")
         
@@ -58,7 +53,7 @@ while enter == "1":
             # then print("you can do a hard hike in NM at atalaya mountain trail in santa fe!")
             # there would be 8 options for hiking alone, 4 states X 2 levels
         if stateOption == "AZ" and level == "1":
-            print("You can do an easy hike in", stateOption, "at West Fork Trail in Sedona \n")
+            print("You can do an easy hike in", stateOption, "at West Fork Trail in Sedona. \n")
         elif stateOption == "AZ" and level == "2":
             print("You can do a hard hike in", stateOption, "at Camelback Hike in Phoenix. \n")
         elif stateOption == "CO" and level == "1":
@@ -73,8 +68,6 @@ while enter == "1":
             print("You can do an easy hike in", stateOption, "at Zion Canyon Overlook near Hurricane . \n")
         else:
             print("You can do a hard hike in", stateOption, "at Hidden Valley Trail near Moab. \n")
-        # else:
-        #     print("okay -_-")
         
     elif activityType == 2:
         print("you chose biking!")
@@ -84,6 +77,3 @@ while enter == "1":
         # stateOption
         # print("you chose state: ", stateOption)
     break
-        
-    # print("yay we're here!")
-    # break
