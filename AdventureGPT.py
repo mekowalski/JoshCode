@@ -68,12 +68,33 @@ while enter == "1":
             print("You can do an easy hike in", stateOption, "at Zion Canyon Overlook near Hurricane . \n")
         else:
             print("You can do a hard hike in", stateOption, "at Hidden Valley Trail near Moab. \n")
+            
+            # should i just move onto new project? this is just getting long and tedious -_-
+            
+            
         
     elif activityType == 2:
-        print("you chose biking!")
-        # stateOption
+        print("you chose biking! \n")
+        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ").upper()
+        if stateOption == "AZ":
+            print("You can bike an EASY trail in", stateOption, "at Bell Rock Pathway in Sedona \n")
+            print("OR \n")
+            print("You can bike a HARD trail in", stateOption, "at Mt Lemmon near Tucson \n")
+        elif stateOption == "CO":
+            print("You can bike an EASY trail in", stateOption, "at Red Rocks Canyon Open Space in Colorado Springs \n")
+            print("OR \n")
+            print("You can bike a HARD trail in", stateOption, "at Horsehoe Trail near Canyon Creak Area \n")
+        elif stateOption == "NM":
+            print("You can bike an EASY trail in", stateOption, "at Galisteo Bason Preserve in Santa Fe \n")
+            print("OR \n")
+            print("You can bike a HARD trail in", stateOption, "at Alien Run Trail in Aztec \n")
+        else:
+            print("You can bike an EASY trail in", stateOption, "at Round Valley's Big Easy Trail in Park City \n")
+            print("OR \n")
+            print("You can bike a HARD trail in", stateOption, "at Porcupine Rim in Moab \n")
+        # just for myself, print an easy and hard biking trail once state is selected
     else:
         print("you chose a water day!")
-        # stateOption
-        # print("you chose state: ", stateOption)
+        # same here, just give both free/fee options in the chosen state
+
     break
