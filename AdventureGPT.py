@@ -104,5 +104,15 @@ while enter == "1":
             print("A FREE option for a water day in", stateOption, "is Bear Lake on the border of Utah and Idaho \n")
             print("OR \n")
             print("A FEE option for a water day in", stateOption, "is Antelope Island State Park \n")
+            
+    # not fure where to put a for loop. would want to restart program if user wants to shoose another adventure
+    # or end if user is done
+    # for loop at the beginning? near while loop? 
+    for i in range(1,3):
+        input("Would you like to plan a different adventure? Y/N: \n").upper()
+        if input == "Y":
+            enter = input("Enter 1-Start or 2-Stop: ")
+        else:
+            print("Okay see you later!")            
     print("Have fun an be safe!!!")
     break
