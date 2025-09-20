@@ -48,10 +48,6 @@ while enter == "1":
         stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ").upper()
         print("Great you chose", stateOption, "\n")
         level = input("Difficulty Level:  1-Easy, 2-Hard :")
-        
-        # maybe two conditions should be met: if state == NM and level == 2
-            # then print("you can do a hard hike in NM at atalaya mountain trail in santa fe!")
-            # there would be 8 options for hiking alone, 4 states X 2 levels
         if stateOption == "AZ" and level == "1":
             print("You can do an easy hike in", stateOption, "at West Fork Trail in Sedona. \n")
         elif stateOption == "AZ" and level == "2":
@@ -67,12 +63,8 @@ while enter == "1":
         elif stateOption == "UT" and level == "1":
             print("You can do an easy hike in", stateOption, "at Zion Canyon Overlook near Hurricane . \n")
         else:
-            print("You can do a hard hike in", stateOption, "at Hidden Valley Trail near Moab. \n")
-            
-            # should i just move onto new project? this is just getting long and tedious -_-
-            
-            
-        
+            print("You can do a hard hike in", stateOption, "at Hidden Valley Trail near Moab. \n")   
+                     
     elif activityType == 2:
         print("you chose biking! \n")
         stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ").upper()
@@ -92,9 +84,25 @@ while enter == "1":
             print("You can bike an EASY trail in", stateOption, "at Round Valley's Big Easy Trail in Park City \n")
             print("OR \n")
             print("You can bike a HARD trail in", stateOption, "at Porcupine Rim in Moab \n")
-        # just for myself, print an easy and hard biking trail once state is selected
+
     else:
         print("you chose a water day!")
-        # same here, just give both free/fee options in the chosen state
-
+        stateOption = input("Enter State for Activity: CO, NM, UT, AZ : ").upper()
+        if stateOption == "AZ":
+            print("A FREE option for a water day in", stateOption, "is Lone Rock Beach at Lake Powell \n")
+            print("OR \n")
+            print("A FEE option for a water day in", stateOption, "is Tonto National Forest Lakes \n")
+        elif stateOption == "CO":
+            print("A FREE option for a water day in", stateOption, "is Vallecito Lake in Durango \n")
+            print("OR \n")
+            print("A FEE option for a water day in", stateOption, "is Lake Nighthorse in Durango \n")
+        elif stateOption == "NM":
+            print("A FREE option for a water day in", stateOption, "is Bottomless Lake near Midway \n")
+            print("OR \n")
+            print("A FEE option for a water day in", stateOption, "is Abiquiu Lake \n")
+        else:
+            print("A FREE option for a water day in", stateOption, "is Bear Lake on the border of Utah and Idaho \n")
+            print("OR \n")
+            print("A FEE option for a water day in", stateOption, "is Antelope Island State Park \n")
+    print("Have fun an be safe!!!")
     break
