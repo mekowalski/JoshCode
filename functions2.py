@@ -1,13 +1,22 @@
-def grade(percentage):
-    print("Enter your grade percentage: ")
-    if percentage > 0 and percentage <= 50:
-        print("IMPROVE YPUR GRADE!!!")
-    elif percentage > 50 and percentage <= 70:
-        print("You're barely passing the class")
-    elif percentage > 70 and percentage <= 90:
-        print("You're doing great! Keep it up!")
-    else:
-        print("You're top tier!")
+# def grade(percentage):
+#     if percentage > 0 and percentage <= 50:
+#         print("IMPROVE YPUR GRADE!!!")
+#     elif percentage > 50 and percentage <= 70:
+#         print("You're barely passing the class")
+#     elif percentage > 70 and percentage <= 90:
+#         print("You're doing great! Keep it up!")
+#     else:
+#         print("You're top tier!")
 
-percentage = int(input("Please enter your grade percentage: "))
-grade(percentage)
+# percentage = int(input("Please enter your grade percentage: "))
+# grade(percentage)
+
+def bankBalance(balance):
+    if balance >= 500:
+        return True
+    else:
+        return False
+
+name = input("Please enter your name: ")
+balance = int(input("Please enter your current balance: "))
+bankBalance(balance)
