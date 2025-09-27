@@ -17,6 +17,11 @@ def bankBalance(balance):
     else:
         return False
 
-name = input("Please enter your name: ")
-balance = int(input("Please enter your current balance: "))
-bankBalance(balance)
+name = input("Please enter your name: ").capitalize()
+balance = float(input("Please enter your current balance: "))
+
+res = bankBalance(balance)
+if res == True:
+    print("Your balance is above $500. You have enough funds \n")
+else:
+    print("Your balance is below $500. Bank balance is low \n")
